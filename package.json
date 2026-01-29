@@ -18,9 +18,9 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./apps/todo-backend/test/jest-e2e.json",
-    "start:api": "node dist/apps/api-gateway/main.js",
-    "start:auth": "node dist/apps/auth-service/main.js",
-    "start:task": "node dist/apps/task-service/main.js"
+    "start:api": "node dist/api-gateway/src/main.js",
+    "start:auth": "node dist/auth-service/src/main.js",
+    "start:task": "node dist/task-service/src/main.js"
   },
   "dependencies": {
     "@nestjs/common": "^11.0.1",
