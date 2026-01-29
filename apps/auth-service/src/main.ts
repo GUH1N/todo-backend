@@ -11,7 +11,7 @@ async function bootstrap() {
   app.connectMicroservice<MicroserviceOptions>({
     transport: Transport.TCP,
     options: {
-      host: '0.0.0.0',
+      host: 'https://todo-r8m8.onrender.com',
       port: 4001,
     },
   });
@@ -23,7 +23,7 @@ async function bootstrap() {
 
   // 4️⃣ Start everything
   await app.startAllMicroservices();
-  await app.listen(process.env.PORT || 3000);
+  await app.listen(process.env.PORT || 3001);
 
   console.log('🔐 Auth service running on TCP :4001');
   console.log('🌐 Health check running on HTTP');
